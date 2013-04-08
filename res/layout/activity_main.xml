@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33CC33"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:background="#003399"
+        android:baselineAligned="true"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/pic_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/anh_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/semi_transparent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/menu_padding"
+                android:paddingTop="@dimen/menu_padding"
+                android:text="@string/menu_picture"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="3" >
+
+            <ImageView
+                android:id="@+id/story_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:onClick="OnClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/latest_news" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/semi_transparent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/menu_padding"
+                android:paddingTop="@dimen/menu_padding"
+                android:text="@string/menu_news"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginRight="70dp"
+        android:layout_weight="3"
+        android:background="@drawable/latest_news" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom" >
+
+            <ImageView
+                android:id="@+id/video_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:onClick="OnClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/video_clip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/semi_transparent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/menu_padding"
+                android:paddingTop="@dimen/menu_padding"
+                android:text="@string/menu_video"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:background="#000000"
+        android:baselineAligned="false" >
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="3" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/game_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/semi_transparent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/menu_padding"
+                android:paddingTop="@dimen/menu_padding"
+                android:text="@string/menu_game"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#000000"
+                android:scaleType="fitCenter"
+                android:src="@drawable/just_for_fun" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/semi_transparent"
+                android:gravity="center"
+                android:paddingBottom="@dimen/menu_padding"
+                android:paddingTop="@dimen/menu_padding"
+                android:text="@string/menu_funny"
+                android:textColor="#ffffff" >
+            </TextView>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

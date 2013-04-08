@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:orientation="vertical" 
+        
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:text="TOP HOT NEWS"
+            android:textColor="#ffffff"
+            android:textSize="20sp" 
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/top_news_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" 
+            android:padding="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:text="ECONOMY"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/top_economy_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="5dp" />
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:text="ENTERTAIMENT"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/top_enter_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:text="SPORT"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/top_sport_pager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" 
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</ScrollView>
